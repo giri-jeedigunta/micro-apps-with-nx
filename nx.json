@@ -24,11 +24,7 @@
   },
   "projects": {
     "login": {
-      "tags": []
-    },
-    "login-e2e": {
-      "tags": [],
-      "implicitDependencies": ["login"]
+      "tags": ["react-app"]
     }
   }
 }

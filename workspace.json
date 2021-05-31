@@ -7,15 +7,15 @@
   "generators": {
     "@nrwl/react": {
       "application": {
-        "style": "styled-jsx",
+        "style": "styled-components",
         "linter": "eslint",
         "babel": true
       },
       "component": {
-        "style": "styled-jsx"
+        "style": "styled-components"
       },
       "library": {
-        "style": "styled-jsx",
+        "style": "styled-components",
         "linter": "eslint"
       }
     }
@@ -88,32 +88,6 @@
           "options": {
             "jestConfig": "apps/login/jest.config.js",
             "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "login-e2e": {
-      "root": "apps/login-e2e",
-      "sourceRoot": "apps/login-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/login-e2e/cypress.json",
-            "tsConfig": "apps/login-e2e/tsconfig.e2e.json",
-            "devServerTarget": "login:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "login:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/login-e2e/**/*.{js,ts}"]
           }
         }
       }
